@@ -4,17 +4,28 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payment Page</title>
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css" />
+    <script
+      src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs"
+      type="module"
+    ></script>
   </head>
-  <body style="background-color: rgb(255, 255, 255);">
+  <body style="background-color: rgb(255, 255, 255)">
     <!-- back indicator using hand -->
-     <div style="margin: 5px; margin-top: 20px;" id="hand">
-        <img src="./h1.png" style="width: 30px; height: 30px;" />
-     </div>
+    <div style="margin: 5px; margin-top: 20px" id="hand">
+      <img src="./h1.png" style="width: 30px; height: 30px" />
+    </div>
     <!-- card container -->
     <div class="cardContainer">
-      <p class="cardHeader">Thanks !</p>
-      <p class="cardBody">Payment Completed Successfully !</p>
+      <dotlottie-player
+        src="https://lottie.host/f87e5bc8-ba8f-4f22-b33a-361eaf01dead/IgNG972usQ.json"
+        background="transparent"
+        speed="1"
+        style="width: 200px; height: 200px"
+        loop
+        autoplay
+      ></dotlottie-player>
+      <p class="cardBody">Payment Complated Successfully !</p>
     </div>
   </body>
 </html>
